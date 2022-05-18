@@ -26,6 +26,7 @@
   "devDependencies": {
     "@chakra-ui/cli": "^1.9.0",
     "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-inject": "^4.0.4",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@storybook/addon-actions": "^6.4.22",
@@ -39,6 +40,7 @@
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
     "@types/react": "^18.0.9",
+    "global": "^4.4.0",
     "react": "^18.1.0",
     "rollup": "^2.73.0",
     "rollup-plugin-dts": "^4.2.1",
