@@ -1,4 +1,6 @@
 import { extendTheme, ThemeOverride } from '@chakra-ui/react';
+import defaultThemeColors from './theme/defaultThemeColors';
+import defaultThemeFonts from './theme/defaultThemeFonts';
 import themeComponents from './theme/themeComponents';
 
 type Colors = string | { [key: string]: Colors };
@@ -9,8 +11,8 @@ type Fonts = {
 };
 
 export default function buildTheme(
-  colors: Colors,
-  fonts: Fonts
+  colors: Colors = defaultThemeColors,
+  fonts: Fonts = defaultThemeFonts
 ): ThemeOverride {
   return extendTheme({ colors, fonts, components: themeComponents });
 }
